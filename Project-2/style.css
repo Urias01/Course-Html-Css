@@ -1,18 +1,47 @@
+html{
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#FC5E55, #FA4063);
+
+}
+
 .container {
     width: 1024px;
-    height: 300px;
-    background-color: rgb(1, 43, 1);
+    min-height: 300px;
     margin: 0 auto 0 auto;
 }
 
 header {
-    background-color: rgb(28, 80, 28);
-    min-height: 100px;
+    padding: 15px 0 15px 0 ;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.logo {
+    flex: 2;
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+    
 }
 
 main {
-    background-color: rgb(27, 116, 27);
     min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.herobox1 {
+    flex: 2;
+}
+
+.herobox2 {
+    flex: 1;
 }
 
 .cards {
@@ -27,11 +56,13 @@ main {
     min-height: 300px;
     width: 30%;
 }
+
 .card2 {
     background-color: rgb(207, 18, 75);
     min-height: 300px;
     width: 30%;
 }
+
 .card3 {
     background-color: rgb(90, 2, 28);
     min-height: 300px;
