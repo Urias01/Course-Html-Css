@@ -49,6 +49,12 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+
 p {
     line-height: 2.5rem;
     margin-bottom: 0.5rem;
@@ -61,6 +67,7 @@ p {
 .cards {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .card1 {
@@ -85,4 +92,20 @@ p {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
+}
+
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 10px 30px 20px 30px;
+}
+
+.cards i {
+    font-size: 100px;
+    padding-top: 30px;
+}
+
+.cards a {
+    color: white;
+    text-decoration: none;
 }
