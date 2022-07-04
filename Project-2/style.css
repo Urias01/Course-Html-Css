@@ -125,3 +125,17 @@ a.mybutton {
     display: inline-block;
     margin-top: 10px;
 }
+
+.navbutton{
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    box-shadow: none;
+}
+
+a.navbutton{
+    margin-left: 30px;
+}
