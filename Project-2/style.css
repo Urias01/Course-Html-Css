@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: linear-gradient(#10024B, gray);
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -112,7 +112,7 @@ p {
 
 .mybutton {
     background-color: white;
-    color: #FA4083;
+    color: #10024B;
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
     border-radius: 2px;
@@ -120,7 +120,7 @@ p {
 }
 
 .mybutton:hover {
-    background-color: rgb(29, 213, 103);
+    background-color: rgb(145, 6, 126);
     transition-duration: 2s; ;
 }
 
@@ -129,14 +129,16 @@ a.mybutton {
     margin-top: 10px;
 }
 
-.navbutton{
+.navButton{
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
     border-radius: 2px;
     border: 1px solid white;
+    display: inline-block;
+    position: relative;
 }
 
-a.navbutton {
+a.navButton {
     color: white;
     text-decoration: none;
 }
@@ -153,4 +155,34 @@ a.navbutton {
     padding: 50px;
     border: 1px solid white;
     margin-top: 50px;
+}
+
+/* .tbox :last-child {
+    font-size: .8rem;
+} */
+
+.tbox p:last-of-type{
+    font-size: .8rem;
+    padding-left: 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navButton:hover .dropdown{
+    display: block;   
+}
+
+.dropdown .navButton  {
+    width: 120px;
+    background-color: white;
+}
+
+.dropdown .navButton a{
+    color:#2a0ba5;
 }
