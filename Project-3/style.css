@@ -1,29 +1,77 @@
 /* Global View aka Desktop View */
 
 body {
-    background-image: url(./images/Logo\ Background.png);
+   /*  background-image: url(./images/Logo\ Background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center
+    background-position: center; */
+    background-color: #EBEBEB;
+    font-family: 'Asap', sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .container {
-    background-color: tomato;
     min-height: 500px;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 150px;
 }
 
 h1 {
     font-size: 3rem;
 }
 
+.header-container{
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width:1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+a.navbutton {
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .col {
     width: 30%;
     margin-bottom: 40px;
+    background-color: rgb(43, 226, 137);
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
 }
 
 .hide-desktop-only {
@@ -33,6 +81,10 @@ h1 {
 .col img {
     width: 100%;
     height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
 }
 
 /* Tablet view */
@@ -45,6 +97,28 @@ h1 {
 
     .hide-desktop-only {
         display: block;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    nav a.navbutton {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
 }
@@ -60,6 +134,27 @@ h1 {
 
     .hide-mobile-only {
         display: none;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    nav a.navbutton {
+        display: block;
+        margin-left: 0;
     }
 
 }
