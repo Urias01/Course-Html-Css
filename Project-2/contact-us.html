@@ -75,6 +75,60 @@
             <h1>Contact Us</h1>
             <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you
                 within a matter of hours to help you.</p>
+
+            <!-- lack to do a sftp to run the formulary or start apache -->
+            <form action="mail.php" method="post">
+
+                <div class="inputWrapper">
+                    <label for="name" class="newline">First Name</label>
+                    <input type="text" name="name" id="name" placeholder="First name">
+                </div>
+
+                <div class="inputWrapper">
+                    <label for="email" class="newline">Email</label>
+                    <input type="email" name="email" id="email" placeholder="user@example.com">
+                </div>
+
+                <div class="inputWrapper">
+                    <textarea name="message" id="message" cols="100" rows="5"
+                        placeholder="Let as show what you think"></textarea>
+                </div>
+
+                <div class="inputWrapper">
+
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                    <label for="email-sub">Sign Up for Email Newsletter</label>
+
+                </div>
+
+                <div class="inputWrapper">
+                    <p>How would you like to be contacted?</p>
+                    <input type="radio" name="contact-pref" id="phone" value="phone">
+                    <label for="phone" class="margin-right-a">Phone</label>
+                    <input type="radio" name="contact-pref" id="email2" value="email">
+                    <label for="email2">Email</label>
+                </div>
+
+                <div class="inputWrapper">
+                    
+                    <select name="country" id="country">
+                        
+                        <option value="Not Choosen">Choose Country</option>
+                        <option value="Limerick">Limerick</option>
+                        <option value="Galway">Galway</option>
+                        <option value="Dublin">Dublin</option>
+
+                        <!-- <input type="date" name="" id="">
+                        <input type="color" name="" id=""> -->
+                    
+                    </select>    
+
+                </div>
+
+                <input type="submit" value="Fire Away" class="mybutton">
+
+            </form>
+
         </div>
 
         <div class="cards">

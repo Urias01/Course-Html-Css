@@ -43,6 +43,7 @@ main {
     min-height: 300px;
     padding-top: 50px;
 }
+
 .cards {
     display: flex;
     justify-content: space-between;
@@ -125,7 +126,6 @@ p {
     color: #10024B;
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
-    border-radius: 2px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
 }
 
@@ -195,4 +195,38 @@ a.navButton {
 
 .dropdown .navButton a{
     color:#2a0ba5;
+}
+
+.inputWrapper {
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px
+}
+
+.margin-right-a {
+    margin-right: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+input[type=submit] {
+    border: none;
+}
+
+form {
+    margin: 40px 0px;
 }
