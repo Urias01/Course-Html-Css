@@ -1,5 +1,12 @@
 /* Global View aka Desktop View */
 
+body {
+    background-image: url(./images/Logo\ Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
 .container {
     background-color: tomato;
     min-height: 500px;
@@ -15,14 +22,17 @@ h1 {
 }
 
 .col {
-    background-color: rgb(243, 31, 31);
-    min-height: 200px;
     width: 30%;
     margin-bottom: 40px;
 }
 
 .hide-desktop-only {
     display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
 }
 
 /* Tablet view */
