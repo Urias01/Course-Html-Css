@@ -87,6 +87,10 @@ a.navbutton {
     font-weight: 700;
 }
 
+.mob-wrapper {
+    display: none;
+}
+
 /* Tablet view */
 
 @media (max-width: 768px) {
@@ -102,10 +106,6 @@ a.navbutton {
     .container {
         padding-top: 40px;
     }
-    header {
-        display: block;
-        text-align: center;
-    }
 
     .header-container{
         position: relative;
@@ -115,12 +115,28 @@ a.navbutton {
         padding: 40px 0;
     }
 
-    nav a.navbutton {
-        display: block;
-        margin-left: 0;
-        margin-bottom: 10px;
+    nav {
+        display: none;
     }
 
+    .navbutton-mob {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+    
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
 }
 
 /* Mobile View */
@@ -139,10 +155,6 @@ a.navbutton {
     .container {
         padding-top: 40px;
     }
-    header {
-        display: block;
-        text-align: center;
-    }
 
     .header-container{
         position: relative;
@@ -150,11 +162,6 @@ a.navbutton {
 
     .logo {
         padding: 40px 0;
-    }
-
-    nav a.navbutton {
-        display: block;
-        margin-left: 0;
     }
 
 }
